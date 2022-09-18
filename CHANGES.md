@@ -3,14 +3,15 @@
 
 ## [0.0.1-2](https://go.s3d.club/s3d-cli/work/0.0.1)
 - **TODO** Added `flow` command
+- **TODO** Changed to always `json` output
+- **TODO** Improved `README.md`
 - **TODO** Removed `git` command
 - Added a limited but working CLI
 
 ## [Next](https://go.s3d.club/s3d-cli/next)
-- **TODO** Added instructions added for install
-- **TODO** Added our `1.0.0`
-- **TODO** Changed `aws` to always make `json` output
-- **TODO** Created documentation page for each command
-- **TODO** Fixed typos and other minor errors
-- **TODO** Updated Go dependencies
-- **TODO** Wrote install instructions
+- **TODO** Added `1.0.0`
+- **TODO** Added `CHANGELOG.md` 
+- **TODO** Added `CONTRIBUTING.md`
+- **TODO** Added `LICENSE` 
+- **TODO** Added `README.md` section for install
+- **TODO** Created markdown file for each command

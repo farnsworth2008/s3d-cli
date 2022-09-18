@@ -6,15 +6,15 @@ import (
 )
 
 func cmdTerraform() *command {
-	terraform.AddCommand(terraformCheck)
-	return terraform
+	tfCmd.AddCommand(terraformCheck)
+	return tfCmd
 }
 
 func runTerraformCheck(cmd *command, args []string) {
 	fmt.Println("Stub for check Terraorm: " + strings.Join(args, " "))
 }
 
-var terraform = &command{
+var tfCmd = &command{
 	Long:  "This is the top level command for working with Terraform",
 	Short: "Teraform Command Group",
 	Use:   "tf",

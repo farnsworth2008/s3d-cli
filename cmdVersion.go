@@ -7,16 +7,16 @@ import "fmt"
 
 // Format our version
 func runVersion(cmd *command, args []string) {
-	fmt.Println("0.0.1-1")
+	fmt.Println("0.0.1-2")
 }
 
 // Return our version command
 func cmdVersion() *command {
-	return version
+	return versionCmd
 }
 
-// Our version command structure
-var version = &command{
+// Our versionCmd command structure
+var versionCmd = &command{
 	Run:   runVersion,
 	Short: "Display the program version",
 	Use:   "version",

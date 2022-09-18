@@ -12,7 +12,7 @@ import (
 func main() {
 	s3d.AddCommand(
 		cmdAws(),
-		goCommands(),
+		cmdGo(),
 		cmdTerraform(),
 		cmdVersion(),
 	)

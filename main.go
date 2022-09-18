@@ -4,24 +4,20 @@
 // The S3D Command Line Interface "main" package
 package main
 
-import (
-	"github.com/spf13/cobra"
-)
+import "github.com/spf13/cobra"
 
 // Run the CLI
 func main() {
-	s3d.AddCommand(
+	s3dCmd.AddCommand(
 		cmdAws(),
-		goCommands(),
-		cmdTerraform(),
 		cmdVersion(),
 	)
-	s3d.Execute()
+	s3dCmd.Execute()
 }
 
 type command = cobra.Command
 
-var s3d = &command{
+var s3dCmd = &command{
 	Use:   "s3d",
 	Short: "The CLI for the S3D Club",
 	Long:  s3dLong,

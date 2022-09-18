@@ -18,19 +18,19 @@ import (
 // @Summary AWS EC2 Commands
 // @Tags Thing
 func cmdAwsEc2() *command {
-	awsEc2.AddCommand(awsEc2Start)
-	awsEc2.AddCommand(awsEc2Stop)
-	awsEc2.AddCommand(awsEc2UpsertR53)
-	return awsEc2
+	awsEc2Cmd.AddCommand(awsEc2StartCmd)
+	awsEc2Cmd.AddCommand(awsEc2StopCmd)
+	awsEc2Cmd.AddCommand(awsEc2R53Upsert)
+	return awsEc2Cmd
 }
 
-var awsEc2 = &command{
+var awsEc2Cmd = &command{
 	Long:  "This is the top level command for working with AWS EC2",
 	Short: "AWS EC2 Command Group",
 	Use:   "ec2",
 }
 
-var awsEc2Start = &command{
+var awsEc2StartCmd = &command{
 	Args:  minArgs(1),
 	Long:  longAwsEc2Start,
 	Run:   runEc2Start,
@@ -38,7 +38,7 @@ var awsEc2Start = &command{
 	Use:   "start [instance_name]",
 }
 
-var awsEc2Stop = &command{
+var awsEc2StopCmd = &command{
 	Args:  minArgs(1),
 	Short: "Stop the AWS EC2 instance with a given name",
 	Use:   "stop [instance_name]",
@@ -48,7 +48,7 @@ var awsEc2Stop = &command{
 	},
 }
 
-var awsEc2UpsertR53 = &command{
+var awsEc2R53Upsert = &command{
 	Args:  minArgs(1),
 	Long:  longEc2UpsertR53,
 	Run:   runEc2UpsertR53,

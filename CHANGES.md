@@ -6,12 +6,12 @@
 - **TODO** Changed to always `json` output
 - **TODO** Improved `README.md`
 - **TODO** Removed `git` command
+- Added `LICENSE` 
 - Added a limited but working CLI
 
 ## [Next](https://go.s3d.club/s3d-cli/next)
 - **TODO** Added `1.0.0`
 - **TODO** Added `CHANGELOG.md` 
 - **TODO** Added `CONTRIBUTING.md`
-- **TODO** Added `LICENSE` 
 - **TODO** Added `README.md` section for install
 - **TODO** Created markdown file for each command

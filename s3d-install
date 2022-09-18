@@ -1,8 +1,14 @@
 #!/bin/bash
+cd "$(dirname "$0")"
 
+# Set error mode
 set -e
 
+# Start with a **TOTALLY** clean tree
+git clean -fdx
+
+# Make our bin
 make
 
-mkdir -p ~/bin
+# Move our bin to their home bin
 cp s3d ~/bin

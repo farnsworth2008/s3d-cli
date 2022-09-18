@@ -7,7 +7,7 @@ import "fmt"
 
 // Format our version
 func runVersion(cmd *command, args []string) {
-	fmt.Println("0.0.1-2")
+	fmt.Println("0.0.1")
 }
 
 // Return our version command

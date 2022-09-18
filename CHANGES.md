@@ -1,15 +1,17 @@
 # Changes
 - This is a [CHANGES.md](https://go.s3d.club/changes/) file
 
-## [0.0.1-2](https://go.s3d.club/s3d-cli/work/0.0.1)
+## [0.0.1-3](https://go.s3d.club/s3d-cli/work/0.0.1)
+- Added `LICENSE` 
+- **TODO** Added a limited but working CLI
+
+## [0.0.2-1](https://go.s3d.club/s3d-cli/work/0.0.2)
 - **TODO** Added `Code Style` section to `README.md`
 - **TODO** Added `flow` command
 - **TODO** Changed to always `json` output
 - **TODO** Improved `README.md`
 - **TODO** Improved coding conventions
 - **TODO** Removed `git` command
-- Added `LICENSE` 
-- Added a limited but working CLI
 
 ## [Next](https://go.s3d.club/s3d-cli/next)
 - **TODO** Added CI/CD

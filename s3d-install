@@ -1,14 +1,13 @@
 #!/bin/bash
-cd "$(dirname "$0")"
-
-# Set error mode
-set -e
-
-# Start with a **TOTALLY** clean tree
-git clean -fdx
 
 # Make our bin
 make
 
 # Move our bin to their home bin
 cp s3d ~/bin
+
+# Show version
+s3d version | jq
+
+# Load completion
+s3d completion bash > ~/.s3d/s3d-cli-comp

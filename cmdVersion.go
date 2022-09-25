@@ -1,13 +1,17 @@
-// Copyright 2022 The S2D Club. All rights reserved.
-// Use of this source code is governed by the LICENSE file.
-
 package main
 
-import "fmt"
+import (
+	"encoding/json"
+	"fmt"
+)
 
 // Format our version
 func runVersion(cmd *command, args []string) {
-	fmt.Println("0.0.1")
+	m := make(map[string]string)
+	m["version"] = "0.0.2-1"
+	enc, err := json.Marshal(m)
+	kill(err)
+	fmt.Println(string(enc))
 }
 
 // Return our version command

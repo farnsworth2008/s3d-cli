@@ -4,7 +4,6 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"log"
 	"os"
 
 	"github.com/aws/aws-sdk-go-v2/aws"
@@ -19,9 +18,7 @@ func applyR53CName(
 	name string,
 	dnsName string,
 ) {
-	domain := os.Getenv("S3D_DOMAIN")
 	hostedZone := os.Getenv("S3D_ZONE")
-	name = name + "." + domain
 	in := route53.ChangeResourceRecordSetsInput{
 		ChangeBatch: &types.ChangeBatch{
 			Changes: []types.Change{
@@ -32,9 +29,7 @@ func applyR53CName(
 						Type: types.RRTypeCname,
 						TTL:  aws.Int64(60),
 						ResourceRecords: []types.ResourceRecord{
-							{
-								Value: &dnsName,
-							},
+							{Value: &dnsName},
 						},
 					},
 				},
@@ -44,12 +39,8 @@ func applyR53CName(
 	}
 	client := route53.NewFromConfig(cfg)
 	result, err := client.ChangeResourceRecordSets(context, &in)
-	if err != nil {
-		log.Fatal(err)
-	}
+	kill(err)
 	encoding, err := json.Marshal(result)
-	if err != nil {
-		log.Fatal(err)
-	}
+	kill(err)
 	fmt.Println(string(encoding))
 }

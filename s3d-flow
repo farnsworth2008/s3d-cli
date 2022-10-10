@@ -1,0 +1,5 @@
+#!/bin/bash
+set -e
+
+v=$(s3d-flow-json | jq -r .latest)
+sed -i 's/m\["version"\] = \".*/m["version"] = "'"$v"'"/' cmdVersion.go

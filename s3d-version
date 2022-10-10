@@ -1,4 +1,0 @@
-#!/bin/bash
-set -e
-
-_s3d-semver-update cmdVersion.go

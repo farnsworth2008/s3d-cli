@@ -9,5 +9,5 @@ cp s3d ~/bin
 # Show version
 s3d version | jq
 
-# Load completion
+# Write completion script
 s3d completion bash > ~/.s3d/s3d-cli-comp

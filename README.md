@@ -1,10 +1,10 @@
-# S3D Club CLI
+# S3D CLI
 This project defines the S3D club's CLI tool.
 
-## Also READ
+## Other Documents
 Please read our [LICENSE][lice], [CONTRIBUTING][cont], [CODE-OF-CONDUCT][code],
 and [CHANGES][chge] documents before working in this project and anytime they
-are update.
+are updated.
 
 ## Overview
 The `s3d` CLI tool is inspired by the many other great CLI commands we use on a

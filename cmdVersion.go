@@ -8,7 +8,7 @@ import (
 // Format our version
 func runVersion(cmd *command, args []string) {
 	m := make(map[string]string)
-	m["version"] = "0.0.7"
+	m["version"] = "0.0.8"
 	enc, err := json.Marshal(m)
 	kill(err)
 	fmt.Println(string(enc))

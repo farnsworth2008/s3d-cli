@@ -1,10 +1,9 @@
 # S3D CLI
 This project defines the S3D club's CLI tool.
 
-## Other Documents
-Please read our [LICENSE][lice], [CONTRIBUTING][cont], [CODE-OF-CONDUCT][code],
-and [CHANGES][chge] documents before working in this project and anytime they
-are updated.
+## Associated Documents
+Please read our [LICENSE][lice], [CONTRIBUTING][cont], and [CHANGES][chge]
+documents before working in this project and anytime they are updated.
 
 ## Overview
 The `s3d` CLI tool is inspired by the many other great CLI commands we use on a
@@ -19,6 +18,5 @@ Our CLI is written in Go lang using
 screens explaining what they do.
 
 [chge]: ./CHANGES.md
-[code]: ./CODE-OF-CONDUCT.md
 [cont]: ./CONTRIBUTING.md
 [lice]: ./LICENSE.md
